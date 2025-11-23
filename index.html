@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Exchange</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    
+    <div class="main-container">
+        <div class="card">
+            <h2>Currency Converter</h2>
+            <form>
+                <div class="amount">
+                    <p>Enter Amount</p>
+                    <input value="1" type="number" min="1">
+                </div>
+                
+                <div class="dropdown">
+                    <div class="from">
+                        <p>From</p>
+                        <div class="select-container">
+                            <img src="https://flagsapi.com/US/shiny/64.png">
+                            <select name="from"></select> </div>
+                    </div>
+
+                    <div class="icon-container">
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    </div>
+
+                    <div class="to">
+                        <p>To</p>
+                        <div class="select-container">
+                            <img src="https://flagsapi.com/PK/shiny/64.png">
+                            <select name="to"></select> </div>
+                    </div>
+                </div>
+
+                <div class="result-container">
+                    <div class="message">1 USD = 278 PKR</div>
+                </div>
+                
+                <button>Get Exchange Rate</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="code.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
