@@ -44,7 +44,7 @@ const updateExchangeRate = async () => {
         amount.value = "1";
     }
 
-    // NOTE: The API structure is usually URL/currency.json
+    //  The API structure is usually URL/currency.json
     const URL = `${BASE_URL}/${fromCurr.value.toLowerCase()}.json`;
     
     try {
@@ -71,7 +71,7 @@ window.addEventListener("load", () => {
     updateExchangeRate();
 });
 
-// Bonus: Swap Icon Logic
+//  Swap Icon Logic
 swapIcon.addEventListener("click", () => {
     let tempCode = fromCurr.value;
     fromCurr.value = toCurr.value;
